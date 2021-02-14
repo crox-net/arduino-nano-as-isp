@@ -28,3 +28,12 @@ I use it i.a. to program my [KeyChainino](https://www.keychainino.com/):
 
 ![KeyChainino programming](images/keychainino-prog2.jpg)
 
+### Capacitor between RST and GND
+In order to be able to flash the Arduino bootloader to the [Lora Button board](https://github.com/crox-net/lora-button-example), I had to add a capacitor between the RST and GND pins:
+
+![capacitor](images/capacitor-rst-gnd.jpg)
+
+This is documented i.a. here: [ArduinoISP / how to wire your boards](https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoISP#how-to-wire-your-boards).
+
+A future revision of the board will likely include that option :-)
+
