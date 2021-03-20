@@ -163,17 +163,6 @@ F 3 "" H 5000 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5FFC007F
-P 6450 1900
-F 0 "J1" H 6530 1942 50  0000 L CNN
-F 1 "Conn_01x03" H 6530 1851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6450 1900 50  0001 C CNN
-F 3 "~" H 6450 1900 50  0001 C CNN
-	1    6450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x06 J2
 U 1 1 5FFC0F13
 P 7200 2500
@@ -227,9 +216,7 @@ Wire Wire Line
 	7000 2500 8000 2500
 Connection ~ 7000 2500
 Wire Wire Line
-	6250 1900 6750 1900
-Wire Wire Line
-	6750 1900 6750 2600
+	6750 1650 6750 2600
 Wire Wire Line
 	6750 2600 7000 2600
 Wire Wire Line
@@ -271,23 +258,71 @@ $EndComp
 $Comp
 L power:+5V #PWR0109
 U 1 1 5FFCF3D2
-P 6250 2000
-F 0 "#PWR0109" H 6250 1850 50  0001 C CNN
-F 1 "+5V" V 6265 2128 50  0000 L CNN
-F 2 "" H 6250 2000 50  0001 C CNN
-F 3 "" H 6250 2000 50  0001 C CNN
-	1    6250 2000
-	0    -1   -1   0   
+P 6550 1500
+F 0 "#PWR0109" H 6550 1350 50  0001 C CNN
+F 1 "+5V" V 6565 1628 50  0000 L CNN
+F 2 "" H 6550 1500 50  0001 C CNN
+F 3 "" H 6550 1500 50  0001 C CNN
+	1    6550 1500
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3.3V #PWR0110
 U 1 1 5FFCFB02
-P 6250 1800
-F 0 "#PWR0110" H 6250 1650 50  0001 C CNN
-F 1 "+3.3V" V 6265 1928 50  0000 L CNN
-F 2 "" H 6250 1800 50  0001 C CNN
-F 3 "" H 6250 1800 50  0001 C CNN
-	1    6250 1800
-	0    -1   -1   0   
+P 6950 1500
+F 0 "#PWR0110" H 6950 1350 50  0001 C CNN
+F 1 "+3.3V" V 6965 1628 50  0000 L CNN
+F 2 "" H 6950 1500 50  0001 C CNN
+F 3 "" H 6950 1500 50  0001 C CNN
+	1    6950 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60382D3D
+P 3500 5100
+F 0 "C1" H 3615 5146 50  0000 L CNN
+F 1 "C" H 3615 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3538 4950 50  0001 C CNN
+F 3 "~" H 3500 5100 50  0001 C CNN
+	1    3500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 6038BE7A
+P 3500 5250
+F 0 "#PWR0111" H 3500 5000 50  0001 C CNN
+F 1 "GND" H 3505 5077 50  0000 C CNN
+F 2 "" H 3500 5250 50  0001 C CNN
+F 3 "" H 3500 5250 50  0001 C CNN
+	1    3500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4950 3800 4950
+Wire Wire Line
+	4100 4950 4300 4950
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP2
+U 1 1 6039FD68
+P 6750 1500
+F 0 "JP2" H 6750 1705 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 6750 1614 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 6750 1500 50  0001 C CNN
+F 3 "~" H 6750 1500 50  0001 C CNN
+	1    6750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 603B3B97
+P 3950 4950
+F 0 "JP1" H 3950 5155 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 3950 5064 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3950 4950 50  0001 C CNN
+F 3 "~" H 3950 4950 50  0001 C CNN
+	1    3950 4950
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
