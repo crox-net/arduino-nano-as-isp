@@ -21,9 +21,9 @@ As of Arduino 1.8.13, you can use the ArduinoISP sketch from the built-in exampl
 
 The SMD components are 0805 (2012 metric) with somehow bigger pads to allow for hand soldering. The LED are optional though, the board will work equally well without them. I use this [Arduino Nano clone](https://s.click.aliexpress.com/e/_Af7AwF) from RobotDyn, but any compatible board will do.
 
-![Front view](v1.1_front.jpg)
+![Front view](images/v1.1_front.jpg)
 
-![rendered pcb](v1.1_rendered_pcb1.png) ![rendered pogo pins adapter pcb](v1.1_rendered_pcb2.png)
+![rendered pcb](images/v1.1_rendered_pcb1.png) ![rendered pogo pins adapter pcb](images/v1.1_rendered_pcb2.png)
 
 ### First published version
 ![Arduino Nano as ISP](images/pcb-with-nano1.jpg)
